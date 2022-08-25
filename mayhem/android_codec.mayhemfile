@@ -1,0 +1,4 @@
+project: PROJECT
+target: android_codec
+cmds:
+- cmd: /out/android_codec
