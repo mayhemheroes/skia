@@ -22,8 +22,8 @@ RUN apt-get update && apt-get install -y python wget libglu1-mesa-dev cmake lib3
 RUN git clone 'https://chromium.googlesource.com/chromium/tools/depot_tools.git' --depth 1
 ENV PATH="${SRC}/depot_tools:${PATH}"
 
-COPY . 1
-RUN rm -rf 1/mayhem
+COPY . skia
+RUN rm -rf skia/mayhem
 
 # current directory for build script
 WORKDIR skia
